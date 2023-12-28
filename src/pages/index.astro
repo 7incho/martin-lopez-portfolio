@@ -6,9 +6,30 @@ import Header from "../components/Header.astro";
 ---
 
 <Layout title="Martin Lopez">
-    <main class="flex mt-2.5 mx-full bg-blue-900 grid-cols-3">
-        a
+    <main class="flex mt-2.5">
+            <section class="grid grid-cols-3 gap-2.5 w-full">
+                <div class="p-6 rounded-[30px] bg-zinc-900 flex flex-col gap-1 col-span-2 row-span-2">
+                    <span class="text-[16px]">abuot me</span>
+                    <span class="text-[28px] opacity-90">is a fullstack web developer</span>
+                </div>
+                <div class="p-6 rounded-[30px] bg-zinc-900 flex flex-col gap-1 col-span-1 row-span-2">
+                    <span class="text-[16px]">contact me</span>
+                    <span class="text-[28px] opacity-90">this is the contact section</span>
+                </div>
+
+                <a href="https://www.linkedin.com/in/martin-alejandro-lopez/" target="_blank" class="p-6 rounded-[30px] bg-zinc-900 hover:bg-zinc-800 h-16 gap-1 flex justify-center items-center text-lg font-semibold ">
+                    linkedin.
+                </a>
+                <a href="https://github.com/7incho" target="_blank" class="p-6 rounded-[30px] bg-zinc-900 hover:bg-zinc-800 h-16 gap-1 flex justify-center items-center text-lg font-semibold">
+                    github.
+                </a>
+                <a href="https://www.instagram.com/martin.lopez.23/" target="_blank" class="p-6 rounded-[30px] bg-zinc-900 hover:bg-zinc-800 h-16 flex justify-center gap-1 items-center text-lg font-semibold">
+                    instagram.
+                </a>
+               
+            </section>
     </main>
+
 </Layout>
 
 <style>

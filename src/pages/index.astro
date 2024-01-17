@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Socials from '../components/Socials.astro';
 import AboutMe from '../components/AboutMe.astro';
+import Socials from '../components/Socials.astro';
 import MoreAboutMe from '../components/MoreAboutMe.astro';
+import Testimonials from '../components/Testimonials.jsx';
 ---
 
 <Layout title="Martin Lopez">
@@ -11,6 +12,7 @@ import MoreAboutMe from '../components/MoreAboutMe.astro';
             <AboutMe />
             <Socials />
             <MoreAboutMe />
+            <Testimonials client:load/>
         </section>
     </main>
 </Layout>

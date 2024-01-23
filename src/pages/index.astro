@@ -4,15 +4,17 @@ import AboutMe from '../components/AboutMe.astro';
 import Socials from '../components/Socials.astro';
 import MoreAboutMe from '../components/MoreAboutMe.astro';
 import Testimonials from '../components/Testimonials.jsx';
+import Experience from '../components/Experience.astro';
 ---
 
-<Layout title="Martin Lopez">
+<Layout title="Portfolio de Martin Lopez - Desarrollador y Programador web fullstack con 2 años de experiencia" description="Contrata a Martin Lopez para crear tu aplicación web o mobil. Desarrollador web fullstack. Especializado en crear aplicaciones únicas">
     <main class="flex mt-2.5">
         <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2.5 max-w-7xl mx-auto w-full px-8">
             <AboutMe />
             <Socials />
             <MoreAboutMe />
             <Testimonials client:load/>
+            <Experience/>
         </section>
     </main>
 </Layout>

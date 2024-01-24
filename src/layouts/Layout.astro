@@ -1,123 +1,122 @@
 ---
 interface Props {
-	title: string;
-    description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
-import Header from "../components/Header.astro"
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-            <Header />
-			<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+  </body>
 </html>
 
-<style>
-</style>
+<style></style>
 
 <style is:global>
-	:root{
-		color-scheme: light dark;
-	}
+  :root {
+    color-scheme: light dark;
+  }
 
-	html{
-		font-family: "Inter",system-ui, sans-serif;
-        scroll-behavior: smooth;
-	}
-	body{
-		background: #050505;
-		display: flex;
-        flex-direction: column;
-		justify-content: center;
-	}
+  html {
+    font-family: "Inter", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    @media (prefered-reduced-motion: reduce){
-        html {
-            scroll-behavior: auto;
-        }
+  @media (prefered-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
+  }
 
-	@font-face {
-    font-family: 'Inter';
-    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
-    }
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-Black.woff2') format('woff2');
-        font-weight: 900;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-ExtraBold.woff2') format('woff2');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-ExtraBold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-ExtraLight.woff2') format('woff2');
-        font-weight: 200;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-Light.woff2') format('woff2');
-        font-weight: 300;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-Medium.woff2') format('woff2');
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Inter';
-        src: url('/fonts/Inter-Thin.woff2') format('woff2');
-        font-weight: 100;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
 </style>

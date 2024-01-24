@@ -12,7 +12,7 @@ export const Next = () => (
     <path
       d="M16 28L24 20L16 12"
       stroke="currentColor"
-      stroke-width="2"
+      strokeWidth="2"
       data-darkreader-inline-stroke=""
     ></path>
   </svg>
@@ -29,7 +29,7 @@ export const Previous = () => (
     <path
       d="M24 12L16 20L24 28"
       stroke="currentColor"
-      stroke-width="2"
+      strokeWidth="2"
       data-darkreader-inline-stroke=""
     ></path>
   </svg>

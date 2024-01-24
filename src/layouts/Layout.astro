@@ -34,6 +34,7 @@ import Header from "../components/Header.astro"
 
 	html{
 		font-family: "Inter",system-ui, sans-serif;
+        scroll-behavior: smooth;
 	}
 	body{
 		background: #050505;
@@ -41,6 +42,12 @@ import Header from "../components/Header.astro"
         flex-direction: column;
 		justify-content: center;
 	}
+
+    @media (prefered-reduced-motion: reduce){
+        html {
+            scroll-behavior: auto;
+        }
+    }
 
 	@font-face {
     font-family: 'Inter';

@@ -17,11 +17,17 @@ const { date, title, description, descriptionplus, link } = Astro.props;
   <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-500"></div>
 </div>
 <div class="mt-3 sm:pe-8">
-  <h3 class="text-5xl font-semibold text-gray-500 dark:text-white">{title}</h3>
+  <h3
+    class="text-5xl font-semibold text-gray-500 dark:text-white tracking-tight"
+  >
+    {title}
+  </h3>
   <time class="block mb-2 text-3xl font-semibold leading-none text-gray-400"
     >{date}</time
   >
-  <p class="text-4xl font-normal text-gray-500 dark:text-white text-pretty">
+  <p
+    class="text-4xl font-normal text-gray-500 dark:text-white text-pretty tracking-tight"
+  >
     {description}
     <span class="text-gray-400">{descriptionplus}</span>
   </p>

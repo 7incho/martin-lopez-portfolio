@@ -1,0 +1,35 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+
+const PROYECTO = [
+  {
+    title: "Spotify Clone",
+    subtitle: "",
+    portada:
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/f_auto,q_auto/v1/bento-portfolio/pjs/spotify/gnpr7bcunrrxfjjtzsxm",
+    link: "",
+  },
+  {
+    title: "CRM",
+    subtitle: "",
+    portada:
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/f_auto,q_auto/v1/bento-portfolio/pjs/crm/gkomjtwmsq2iueniv6dd",
+    link: "",
+  },
+  {
+    title: "Barber Calendar",
+    subtitle: "",
+    portada:
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/f_auto,q_auto/v1/samples/landscapes/architecture-signs",
+    link: "",
+  },
+];
+---
+
+{
+  PROYECTO.map((project) => (
+    <div id="projects" class="bg-zinc-900 col-span-3 rounded-3xl">
+      <ProjectItem {...project} />
+    </div>
+  ))
+}

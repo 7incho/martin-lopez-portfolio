@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 2,
     avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8dA17rQJBwab0gIajx0b49afG0n5MXeUvhiWgwU4OCTuTjthLS-Cd0Sn4xq4E7f9Ias&usqp=CAU",
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/f_auto,q_auto/v1/bento-portfolio/testimonials/lp4kocykuyl6tnf3bwvp",
     testimonial_name: "Camila Lopez",
     content_text:
       "Martin siempre fue nuestro as bajo la manga. En cada proyecto, brilla con una chispa única. Aporta una frescura creativa que simplemente no tiene precio.",
@@ -27,7 +27,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 3,
     avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8dA17rQJBwab0gIajx0b49afG0n5MXeUvhiWgwU4OCTuTjthLS-Cd0Sn4xq4E7f9Ias&usqp=CAU",
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/ar_1:1,c_crop,g_face/bento-portfolio/testimonials/ztovhcqmatppcpirwhv3.jpg",
     testimonial_name: "Máximo Wiersma",
     content_text:
       "Compartir con Martin va más allá del código. No solo es un genio del desarrollo, sino también una persona intuitiva y colaboradora.",

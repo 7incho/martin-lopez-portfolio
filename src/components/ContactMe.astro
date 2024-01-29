@@ -1,0 +1,25 @@
+---
+import Contact from "../icons/Contact.astro";
+
+const { size } = Astro.props;
+const colSpan = size === "small" ? "col-span-1" : "col-span-3";
+const responsiveColSpan = size === "small" ? "sm:col-span-1" : "sm:col-span-3";
+const contactId = size === "large" ? "contact" : "";
+---
+
+<div
+  class={"py-10 px-6 justify-between rounded-3xl bg-zinc-900 flex flex-col " +
+    colSpan +
+    " " +
+    responsiveColSpan +
+    " row-span-2 text-6xl font-medium tracking-tighter items-center"}
+  id={contactId}
+>
+  <Contact />
+  <p class="text-center">Quieres contactarme?</p>
+  <a
+    href="mailto:martin.lopez.dev@gmail.com"
+    class="mt-8 mx-2 px-8 w-auto h-14 bg-orange-600 hover:bg-orange-500 rounded-full text-2xl flex justify-center items-center"
+    >martin.lopez.dev@gmail.com</a
+  >
+</div>

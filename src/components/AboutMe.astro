@@ -1,5 +1,5 @@
 ---
-import Contact from "../icons/Contact.astro";
+import ContactMe from "./ContactMe.astro";
 ---
 
 <div
@@ -21,14 +21,4 @@ import Contact from "../icons/Contact.astro";
     </div>
   </div>
 </div>
-<div
-  class="py-10 px-6 justify-between rounded-3xl bg-zinc-900 flex flex-col col-span-1 row-span-2 text-6xl font-medium tracking-tighter items-center"
->
-  <Contact />
-  <p class="text-center">Quieres contactarme?</p>
-  <a
-    href="mailto:martin.lopez.dev@gmail.com"
-    class="mt-8 mx-2 px-8 w-auto h-14 bg-orange-600 hover:bg-orange-500 rounded-full text-2xl flex justify-center items-center"
-    >martin.lopez.dev@gmail.com</a
-  >
-</div>
+<ContactMe size="small" />

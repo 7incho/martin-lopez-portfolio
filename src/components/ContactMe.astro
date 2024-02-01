@@ -2,8 +2,8 @@
 import Contact from "../icons/Contact.astro";
 
 const { size } = Astro.props;
-const colSpan = size === "small" ? "col-span-3" : "col-span-3";
-const responsiveColSpan = size === "small" ? "md:col-span-1" : " md:col-span-3";
+const colSpan =
+  size === "small" ? "col-span-3 lg:col-span-1" : "col-span-3 lg:col-span-3";
 const contactId = size === "large" ? "contact" : "";
 ---
 
@@ -11,8 +11,7 @@ const contactId = size === "large" ? "contact" : "";
   class={"py-10 px-6 justify-between rounded-3xl bg-zinc-900 flex flex-col " +
     colSpan +
     " " +
-    responsiveColSpan +
-    " row-span-2 text-6xl font-medium tracking-tighter items-center"}
+    " row-span-2 text-4xl md:text-5xl xl:text-6xl font-medium tracking-tighter items-center"}
   id={contactId}
 >
   <Contact />

@@ -53,7 +53,7 @@ const Testimonials = () => {
           (item, index) =>
             index === current && (
               <div key={index}>
-                <div className="text-5xl font-medium tracking-tighter text-wrap pb-8">
+                <div className="text-3xl md:text-5xl font-medium tracking-tighter text-wrap pb-8">
                   <h2 className="">"{item.content_text}"</h2>
                 </div>
                 <div className="flex justify-between">
@@ -66,13 +66,15 @@ const Testimonials = () => {
                       />
                     </div>
                     <div>
-                      <h6 className="text-3xl">{item.testimonial_name}</h6>
-                      <span className="text-xl text-gray-400">
+                      <h6 className="text-2xl md:text-3xl">
+                        {item.testimonial_name}
+                      </h6>
+                      <span className="text-2xl text-gray-400">
                         {item.text_block}
                       </span>
                     </div>
                   </div>
-                  <div className="flex gap-4">
+                  <div className="hidden md:flex gap-4">
                     <div className="size-20 flex justify-center flex-col items-center hover:bg-gray-50 hover:text-gray-900 trasition duration-300 rounded-full">
                       <button
                         className="rounded-full p-2"

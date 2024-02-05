@@ -9,7 +9,7 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8dA17rQJBwab0gIajx0b49afG0n5MXeUvhiWgwU4OCTuTjthLS-Cd0Sn4xq4E7f9Ias&usqp=CAU",
+      "https://res.cloudinary.com/dvf2uvb8a/image/upload/f_auto,q_auto/v1/bento-portfolio/testimonials/gyvzpesfavb61ow7f6ja",
     testimonial_name: "Maria Luisa",
     content_text:
       "No es porque sea mi hijo, pero no es un desarrollador cualquiera, sus habilidades van más allá de lo ordinario. Cada código que escribe tiene un toque de innovación.",
